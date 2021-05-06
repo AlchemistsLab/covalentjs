@@ -4,6 +4,11 @@ node.js bindings for covalenthq.com
 
 ## usage
 
+Get covalent api key from https://www.covalenthq.com
+
+Set environment variable API_KEY.
+Set DEBUG=covalentjs environment variable to debug requests.
+
 ```js
 
 const covalentjs = require('covalentjs');

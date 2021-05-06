@@ -1,5 +1,5 @@
 const classA = require('./classA');
-const classB = require('./classA');
+const classB = require('./classB');
 const pricing = require('./pricing');
 
 module.exports = {
@@ -10,10 +10,8 @@ module.exports = {
 
 if (require.main === module) {
 	async function test() {
-		console.log(classA);
-		const result = await classA.getHistoricalPortfolioValueOverTime(1, '0x4004AFc68dd8B5483bBaB82C84b81181fCB545B1', {});
-
-		console.log(result);
+		// console.log(await classA.getHistoricalPortfolioValueOverTime(1, '0x4004AFc68dd8B5483bBaB82C84b81181fCB545B1', {}));
+		// console.log(await classB.getAaveNetworkAssets({}));
 	}
 
 	test().catch(console.error);
